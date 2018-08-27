@@ -1,10 +1,9 @@
 <?php get_header() ?>
 
 <!-- page content -->
+  <div class="container">
+    <div class="blog-body">
 <?php if(is_active_sidebar('sidebar-1')) : ?>
-<main role="main" class="container">
-  <div class="row">
-    <div class="col-md-9">
 <?php endif; ?>
 
       <?php if (have_posts()) : ?>
@@ -22,13 +21,14 @@
         else :
           get_template_part('content');
         endif; ?>
-
+        </div>
+    <div class="side-bar">
 <?php if(is_active_sidebar('sidebar-1' )) : ?>
-    </div>
+
 
           <?php get_sidebar() ?>
 
   </div>
-</main>
+
 <?php endif; ?>
     <?php get_footer() ?>
