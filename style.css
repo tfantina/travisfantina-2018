@@ -1,0 +1,295 @@
+/*
+Theme Name: Travis Fantina 2018 Theme
+Author: Travis Fantina
+Author URI: http://www.travisfantina.com
+Description: The Latest and Greatest
+Version: v0.1.0.rc1
+License: GPL2
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Text Domain: rss-really-simple-style
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:700,900');
+
+/* Color palette */
+
+:root {
+  --tiffany-blue: #90efe5;
+  --red-wine: #90022e;
+  --greyish-brown: #424242;
+  --white: #ffffff;
+}
+
+
+body {
+  background-color: var(--tiffany-blue);
+  color: var(--greyish-brown);  /* this color does not pass WCAG but #3D3D3D would */
+  font-family: AvenirNext;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+
+/* ============================================================================
+Text and Links
+============================================================================ */
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  border-bottom: .5px solid;
+  border-color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+h2, h2, h2>a {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  text-decoration: none;
+}
+
+h2>a:hover {
+  color: rgb(227, 248, 255);
+  text-decoration: none;
+}
+
+h3, .h3, h3>a {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-decoration: none;
+}
+h3>a:hover {
+  color: rgb(227, 248, 255);
+  text-decoration: none;
+}
+
+
+/* ============================================================================
+Navbar and navicons (fontawesome)
+============================================================================ */
+
+.navbar {
+  grid-column: 6/12;
+  display:flex;
+  align-items: flex-end;
+}
+.navbar > ul li > a{
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 14px;
+  color: var(--tiffany-blue);
+  transition: color 1s;
+
+}
+.navbar > ul li > a:hover {
+  color: var(--white);
+}
+
+.page_item {
+  display: inline-block;
+}
+
+.navbar-light .navbar-toggler {
+  border: 3px solid;
+  border-color: rgb(255, 255, 255);
+
+}
+
+.fa {
+  color: rgb(255, 255, 255);
+}
+
+/* ============================================================================
+Containers and Grid
+============================================================================ */
+
+.container {
+  max-width: 45rem;
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+/* ============================================================================
+Layout and Divs
+============================================================================ */
+header {
+
+  background-color: var(--greyish-brown);
+  height: 4em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  grid-column: 1/5;
+}
+
+@media screen and (max-width: 990px) {
+  .primary-sidebar {
+    display: none;
+  }
+  .col-md-3 {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .col-md-9 {
+    max-width: 95%;
+    position: absolute ;
+    margin: 0px;
+    padding: 0px;
+  }
+  .row {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+}
+
+
+/* ============================================================================
+Widgets
+============================================================================ */
+.primary-sidebar {
+  list-style-type: none;
+}
+
+
+/* ============================================================================
+Captions & Authorship
+============================================================================ */
+.wp-caption {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.wp-caption-text {
+  font-style: italic;
+}
+
+.gallery-caption {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.sticky {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.bypostauthor {
+  font-style: italic;
+}
+
+/* ============================================================================
+Alignment
+============================================================================ */
+.aligncenter, div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.alignright, div.aligncenter {
+  float: right;
+  margin: 5px, 15px, 15px;
+  max-width: 50%;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px, 15px, 15px;
+  max-width: 50%;
+}
+
+/* ============================================================================
+Images
+============================================================================ */
+.allignnone {
+  margin: 5px, 15px, 15px;
+  max-width: 40em;
+}
+
+img {
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 3px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px, 15px, 15px;
+  max-width: 50%;
+  height: auto;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px, 15px, 15px;
+  max-width: 50%;
+  height: auto;
+}
+
+a img.alignnone {
+  margin: 5px, 15px, 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+/* ============================================================================
+screen reader text (copied straight from WP Codex)
+============================================================================ */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}

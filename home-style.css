@@ -1,0 +1,48 @@
+.welcome-headder {
+
+  background-color: var(--greyish-brown);
+  height: 15em;
+
+}
+
+header > img {
+
+}
+
+.home-container {
+  padding: 2em;
+  width: 65em;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+
+.card {
+  height: 12em;
+  width:20em;
+  background-color: var(--tiffany-blue);
+  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  transition: width .8s, height .8s, color .8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tiffany-blue);
+
+
+}
+
+.card:hover {
+  width: 20.5em;
+  height: 12.5em;
+  color: var(--red-wine);
+}
+
+.card > img {
+  height: 75px;
+  width: 75px;
+}
