@@ -17,9 +17,11 @@
           </div>
 
               <div class="home-container">
-              <a href="/projects/"><div class="card"><img src="/images/icons/work.png"/>
+              <a href="/projects/">
+                <div class="card"><img src="/images/icons/work.png"/>
                   Projects
-                </div></a>
+                </div>
+              </a>
                 <div class="card"><img src="/images/icons/about.png"/>
                   About
                 </div>
@@ -32,6 +34,11 @@
                 <div class="card"><img src="/images/icons/camera.png"/>
                   Photos
                 </div>
+              <a href="https://github.com/tfantina">
+                <div class="card"><img src="/images/icons/octocat.png"/>
+                  GitHub
+                </div>
+              </a>
               </div>
 
     </body>
