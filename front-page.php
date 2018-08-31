@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html <?php language_attributes(); ?>
     <head>
+      <meta name="viewport" content="device-width, initial-scale=1.0" />
       <meta charset="<?php echo get_bloginfo('charset')?>" />
       <meta name="description" content="<?php echo get_bloginfo('description')?>" />
       <link href="<?php echo get_bloginfo('stylesheet_url')?>" rel="stylesheet"/>
@@ -17,7 +18,7 @@
           </div>
 
               <div class="home-container">
-              <a href="/projects/">
+              <a href="http://localhost/wordpress/index.php/portfolio/">
                 <div class="card"><img src="/images/icons/work.png"/>
                   Projects
                 </div>
@@ -25,7 +26,7 @@
                 <div class="card"><img src="/images/icons/about.png"/>
                   About
                 </div>
-                <a href="index.php/sample-page/"><div class="card"><img src="/images/icons/book.png"/>
+                <a href="http://localhost/wordpress/index.php/blog/"><div class="card"><img src="/images/icons/book.png"/>
                   Blog
                 </div></a>
                 <div class="card"><img src="/images/icons/phone.png"/>

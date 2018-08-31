@@ -4,6 +4,8 @@
   <meta charset="<?php echo get_bloginfo('charset')?>" />
   <meta name="description" content="<?php echo get_bloginfo('description')?>" />
   <link href="<?php echo get_bloginfo('stylesheet_url')?>" rel="stylesheet"/>
+  <link href="<?php echo get_bloginfo('stylesheet_directory')?>/project-style.css" rel="stylesheet"/> 
+  <!-- bad practice to keep this here since it's only needed for the project page -->
   <script src="https://use.fontawesome.com/cf98cc2618.js"></script>
 
   <?php
@@ -11,13 +13,10 @@
   wp_head() ?>
 </head>
 <body class=<?php body_class(); ?>>
-
+<!-- header -->
   <header>
     <div class="logo"><img src="/images/header-text.png" style="height: 40px;" /></div>
-    <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controlls="navbarCollapse" aria-expanded="false" aria-label="Open Navigation" />
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </button> -->
-
+  
 
 
   <?php wp_nav_menu(array('theme_location' => 'header-menu',
@@ -44,3 +43,5 @@
 
   <h1 style="color: <?php echo $color ?>"><?php echo wp_title($sep = "") ?></h1>
 </div>
+
+<!-- header end -->

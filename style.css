@@ -142,7 +142,8 @@ Containers and Grid
 Layout and Divs
 ============================================================================ */
 header {
-
+  position: fixed;
+  width: 100%;
   background-color: var(--greyish-brown);
   height: 4em;
   display: grid;
@@ -165,6 +166,7 @@ header {
 
 }
 .page-title {
+  position: fixed;
 
 }
 

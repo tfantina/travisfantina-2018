@@ -1,4 +1,4 @@
-<!-- content start -->
+<!-- post start -->
 
  <div id="post-<?php the_ID(); ?>" <?php post_class();?> />
 <div class="post">
@@ -33,4 +33,4 @@
 <?php endif; ?>
 </div>
 </div>
-  <!-- content end -->
+  <!-- post end -->
