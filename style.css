@@ -162,12 +162,14 @@ header {
   height: 100%;
   width: 100%;
   margin: 0px;
+  
   border-radius: 0px;
 
 }
 .page-title {
+  top: 56px;
   position: fixed;
-
+  z-index: -10;
 }
 
 .page-title > h1 {
