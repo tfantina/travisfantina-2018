@@ -4,9 +4,27 @@
 }
 .project:nth-child(1n) {
   background-color: var(--tiffany-blue);
+  color: var(--greyish-brown);
 }
 
 .project:nth-child(2n) {
   background-color: var(--greyish-brown);
+  color: var(--tiffany-blue);
 }
 
+
+.project-template {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.project-l {
+  grid-column: 1;
+}
+.project-r {
+  grid-column: 2;
+}
